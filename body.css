@@ -1,0 +1,102 @@
+/* CSS yang Anda buat sebelumnya */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url('img/Cute Couple Cartoon.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+
+h1 {
+    color: #ff69b4;
+}
+
+p {
+    color: #00ffff;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Arial';
+}
+
+.romantic-div {
+    margin-top: 20px;
+}
+
+.romantic-div p {
+    font-size: 1.1em;
+}
+
+.footer {
+    margin-top: 50px;
+    color: #777;
+}
+
+/* CSS untuk mengatur bingkai pada gambar */
+.romantic-img {
+    max-width: 400px; /* Lebar maksimum gambar */
+    max-height: 400px; /* Tinggi maksimum gambar */
+    width: auto; /* Menyesuaikan lebar gambar secara otomatis */
+    height: auto; /* Menyesuaikan tinggi gambar secara otomatis */
+    border: 5px solid #ff69b4; /* Tambahkan bingkai solid dengan warna pink */
+    border-radius: 10px; /* Tambahkan sudut melengkung pada bingkai */
+    margin: 10px; /* Berikan jarak antara gambar */
+    transition: transform 0.3s ease; /* Animasi saat gambar dihover */
+    position: relative; /* Mengatur posisi relatif untuk konten berikutnya */
+}
+
+/* Tampilan pemutar audio bentuk hati */
+#heart-audio-control {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+#heart-audio-control .heart-icon {
+    width: 100%;
+    height: 100%;
+    background: url('img/—Pngtree—red\ tilted\ double\ love\ heart_5565492.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Animasi untuk ikon hati */
+.heart-audio-animation {
+    animation: pulseHeart 1s infinite alternate;
+}
+
+@keyframes pulseHeart {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Efek love meledak */
+.love-explosion {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('img/—Pngtree—red tilted double love heart_5565492.png') no-repeat center center;
+    background-size: cover;
+    animation: explodeLove 1s forwards;
+    opacity: 0;
+}
+
+@keyframes explodeLove {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
