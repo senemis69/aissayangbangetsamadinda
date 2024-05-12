@@ -1,0 +1,2 @@
+# aissayangbangetsamadinda
+perjalanan cinta ku
